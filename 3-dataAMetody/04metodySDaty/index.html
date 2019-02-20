@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Vue.js kurz</title>
+    <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+</head>
+<body>
+<div id="app">
+    {{ getName() }}
+</div>
+</body>
+<script>
+    var app = new Vue({
+        el: '#app',
+        data: {
+            name: 'David'
+        },
+        methods: {
+            getName(){
+                return this.name;
+            }
+        }
+    })
+</script>
+</html>
